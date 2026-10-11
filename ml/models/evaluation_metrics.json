@@ -1,0 +1,191 @@
+{
+  "accuracy": 0.4336283185840708,
+  "macro_f1": 0.4950858560219151,
+  "weighted_f1": 0.3040334971259058,
+  "classification_report": {
+    "ALLOWED": {
+      "precision": 0.5113636363636364,
+      "recall": 0.5421686746987951,
+      "f1-score": 0.5263157894736842,
+      "support": 83.0
+    },
+    "APPEAL(S) ALLOWED": {
+      "precision": 0.33557046979865773,
+      "recall": 1.0,
+      "f1-score": 0.5025125628140703,
+      "support": 400.0
+    },
+    "CASE PARTLY ALLOWED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 59.0
+    },
+    "DISMISSED": {
+      "precision": 0.4,
+      "recall": 0.0025220680958385876,
+      "f1-score": 0.005012531328320802,
+      "support": 793.0
+    },
+    "DISPOSED": {
+      "precision": 0.7628865979381443,
+      "recall": 0.961038961038961,
+      "f1-score": 0.8505747126436781,
+      "support": 77.0
+    },
+    "DISPOSED OF": {
+      "precision": 0.7088607594936709,
+      "recall": 0.8235294117647058,
+      "f1-score": 0.7619047619047619,
+      "support": 68.0
+    },
+    "DISPOSED OF NO COSTS": {
+      "precision": 0.7058823529411765,
+      "recall": 1.0,
+      "f1-score": 0.8275862068965517,
+      "support": 24.0
+    },
+    "DISPOSED OFF": {
+      "precision": 0.7314285714285714,
+      "recall": 0.7901234567901234,
+      "f1-score": 0.7596439169139466,
+      "support": 162.0
+    },
+    "WITHDRAWN": {
+      "precision": 0.24,
+      "recall": 0.20689655172413793,
+      "f1-score": 0.2222222222222222,
+      "support": 29.0
+    },
+    "accuracy": 0.4336283185840708,
+    "macro avg": {
+      "precision": 0.4884435986626509,
+      "recall": 0.5918087915680625,
+      "f1-score": 0.4950858560219151,
+      "support": 1695.0
+    },
+    "weighted avg": {
+      "precision": 0.4384712533725478,
+      "recall": 0.4336283185840708,
+      "f1-score": 0.3040334971259058,
+      "support": 1695.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      45,
+      0,
+      0,
+      1,
+      5,
+      10,
+      0,
+      18,
+      4
+    ],
+    [
+      0,
+      400,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      59,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      19,
+      718,
+      0,
+      2,
+      17,
+      11,
+      7,
+      15,
+      4
+    ],
+    [
+      3,
+      0,
+      0,
+      0,
+      74,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      1,
+      0,
+      56,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      24,
+      0,
+      0
+    ],
+    [
+      8,
+      15,
+      0,
+      1,
+      0,
+      0,
+      0,
+      128,
+      10
+    ],
+    [
+      3,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      14,
+      6
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "ALLOWED",
+    "APPEAL(S) ALLOWED",
+    "CASE PARTLY ALLOWED",
+    "DISMISSED",
+    "DISPOSED",
+    "DISPOSED OF",
+    "DISPOSED OF NO COSTS",
+    "DISPOSED OFF",
+    "WITHDRAWN"
+  ],
+  "best_performing_disposition": "DISPOSED",
+  "best_performing_f1": 0.8505747126436781,
+  "worst_performing_disposition": "CASE PARTLY ALLOWED",
+  "worst_performing_f1": 0.0,
+  "test_rows": 1695
+}
