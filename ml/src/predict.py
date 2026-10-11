@@ -5,7 +5,10 @@ from typing import Any
 import joblib
 import pandas as pd
 
-from actions import build_recommendation
+if __package__:
+    from .actions import build_recommendation
+else:
+    from actions import build_recommendation
 
 
 ML_DIR = Path(__file__).resolve().parents[1]

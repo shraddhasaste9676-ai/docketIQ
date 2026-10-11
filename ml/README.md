@@ -63,6 +63,63 @@ specific error if the model has not been trained.
 
 ## Backend integration
 
-No backend framework or API routes were present in the inspected workspace.
-Integrate this module only after the backend is available; this ML layer does
-not add or modify API endpoints.
+The repository's FastAPI/PostgreSQL backend is defined in
+`VORTEXAdatabase&backend.ipynb`; its case table does not store all model
+features. The ML endpoint predicts from the supplied metadata. If
+`case_reference` and `case_title` are also supplied, the backend upserts the
+case identity and saves the prediction to the additive
+`ml_prediction_history` table. Apply `demo/ml_prediction_history.sql` before
+using this persistence option. Predictions are kept separate from
+source-verified case timeline events.
+
+The notebook includes ML-router registration cells in its generated `main.py`
+app definitions, along with the database connection callback used by optional
+prediction-history persistence. Run the relevant notebook cells with the
+repository root as the working directory and the trained model at
+`ml/models/disposition_model.joblib`.
+The route is:
+
+```text
+POST /api/ml/predict-disposition
+```
+
+Example request:
+
+```json
+{
+  "case_reference": "DIQ-DEMO-BR-002",
+  "case_title": "Fictional Bail Application",
+  "court_name": "Patna High Court",
+  "case_type": "CR. MISC.",
+  "case_year": 2025,
+  "jurisdiction": "Bihar"
+}
+```
+
+Example response:
+
+```json
+{
+  "predicted_disposition": "DISPOSED",
+  "confidence": 0.6766666666666666,
+  "recommended_action": "Review final order and determine follow-up",
+  "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED (68% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+}
+```
+
+Saved history is available from
+`GET /api/ml/cases/{case_reference}/history` after applying the history-table
+migration. Prediction history is not represented as verified timeline evidence.
+
+The response above is an observed example; confidence and prediction vary with
+the supplied metadata. `case_duration_days` is optional, but it is decision-time
+information and should be omitted when predicting an unresolved case. The API
+rejects unknown fields and invalid numeric ranges, returns 503 if the model
+file is missing, and returns 422 for invalid input. No existing route, database
+table, or frontend code is changed.
+
+Run the prediction API tests from the repository root:
+
+```powershell
+python -m pytest ml/tests -q
+```

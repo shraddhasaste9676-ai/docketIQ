@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCase } from '../../context/CaseContext';
+import { MLCaseAnalysis } from '../ml/MLCaseAnalysis';
 import { 
   ShieldCheck, 
   AlertTriangle, 
@@ -95,6 +96,8 @@ export const CaseDashboard: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <MLCaseAnalysis />
 
       {/* Metric & Critical Alert Indicators */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

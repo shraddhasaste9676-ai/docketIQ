@@ -199,6 +199,7 @@
     "categorical__case_type_TAX APP.",
     "categorical__case_type_TC",
     "categorical__case_type_TCA",
+    "categorical__case_type_Unknown",
     "categorical__case_type_WA",
     "categorical__case_type_WMAP",
     "categorical__case_type_WP",
@@ -230,19 +231,30 @@
     "DISPOSED OFF",
     "WITHDRAWN"
   ],
-  "training_date": "2026-10-11T11:50:47.672404+00:00",
+  "class_distribution": {
+    "ALLOWED": 415,
+    "APPEAL(S) ALLOWED": 2001,
+    "CASE PARTLY ALLOWED": 295,
+    "DISMISSED": 3966,
+    "DISPOSED": 386,
+    "DISPOSED OF": 338,
+    "DISPOSED OF NO COSTS": 119,
+    "DISPOSED OFF": 808,
+    "WITHDRAWN": 143
+  },
+  "training_date": "2026-10-11T13:25:53.121685+00:00",
   "training_rows": 6776,
   "test_rows": 1695,
   "random_state": 42,
   "metrics": {
     "accuracy": 0.4336283185840708,
-    "macro_f1": 0.4950858560219151,
-    "weighted_f1": 0.3040334971259058,
+    "macro_f1": 0.49706050215147424,
+    "weighted_f1": 0.304361142049322,
     "classification_report": {
       "ALLOWED": {
-        "precision": 0.5113636363636364,
-        "recall": 0.5421686746987951,
-        "f1-score": 0.5263157894736842,
+        "precision": 0.5054945054945055,
+        "recall": 0.5542168674698795,
+        "f1-score": 0.5287356321839081,
         "support": 83.0
       },
       "APPEAL(S) ALLOWED": {
@@ -258,9 +270,9 @@
         "support": 59.0
       },
       "DISMISSED": {
-        "precision": 0.4,
+        "precision": 0.2857142857142857,
         "recall": 0.0025220680958385876,
-        "f1-score": 0.005012531328320802,
+        "f1-score": 0.005,
         "support": 793.0
       },
       "DISPOSED": {
@@ -270,9 +282,9 @@
         "support": 77.0
       },
       "DISPOSED OF": {
-        "precision": 0.7088607594936709,
+        "precision": 0.7272727272727273,
         "recall": 0.8235294117647058,
-        "f1-score": 0.7619047619047619,
+        "f1-score": 0.7724137931034483,
         "support": 68.0
       },
       "DISPOSED OF NO COSTS": {
@@ -282,30 +294,142 @@
         "support": 24.0
       },
       "DISPOSED OFF": {
-        "precision": 0.7314285714285714,
-        "recall": 0.7901234567901234,
-        "f1-score": 0.7596439169139466,
+        "precision": 0.7298850574712644,
+        "recall": 0.7839506172839507,
+        "f1-score": 0.7559523809523809,
         "support": 162.0
       },
       "WITHDRAWN": {
-        "precision": 0.24,
+        "precision": 0.2608695652173913,
         "recall": 0.20689655172413793,
-        "f1-score": 0.2222222222222222,
+        "f1-score": 0.23076923076923078,
         "support": 29.0
       },
       "accuracy": 0.4336283185840708,
       "macro avg": {
-        "precision": 0.4884435986626509,
-        "recall": 0.5918087915680625,
-        "f1-score": 0.4950858560219151,
+        "precision": 0.4792861735386837,
+        "recall": 0.5924616085974971,
+        "f1-score": 0.49706050215147424,
         "support": 1695.0
       },
       "weighted avg": {
-        "precision": 0.4384712533725478,
+        "precision": 0.3856638626046936,
         "recall": 0.4336283185840708,
-        "f1-score": 0.3040334971259058,
+        "f1-score": 0.304361142049322,
         "support": 1695.0
       }
-    }
+    },
+    "confusion_matrix": [
+      [
+        46,
+        0,
+        0,
+        2,
+        5,
+        9,
+        0,
+        18,
+        3
+      ],
+      [
+        0,
+        400,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        59,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        21,
+        718,
+        0,
+        2,
+        17,
+        10,
+        7,
+        15,
+        3
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        74,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        1,
+        0,
+        56,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0
+      ],
+      [
+        8,
+        15,
+        0,
+        2,
+        0,
+        0,
+        0,
+        127,
+        10
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        14,
+        6
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "ALLOWED",
+      "APPEAL(S) ALLOWED",
+      "CASE PARTLY ALLOWED",
+      "DISMISSED",
+      "DISPOSED",
+      "DISPOSED OF",
+      "DISPOSED OF NO COSTS",
+      "DISPOSED OFF",
+      "WITHDRAWN"
+    ]
   }
 }

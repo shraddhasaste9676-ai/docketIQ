@@ -1,0 +1,47 @@
+[
+  {
+    "case_reference": "DIQ-DEMO-AP-001",
+    "case_title": "Fictional Property Appeal",
+    "expected_disposition_demo_only": "APPEAL(S) ALLOWED",
+    "predicted_disposition": "DISPOSED OFF",
+    "confidence": 0.3570942767717319,
+    "recommended_action": "Manual legal review required",
+    "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED OFF (36% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+  },
+  {
+    "case_reference": "DIQ-DEMO-BR-002",
+    "case_title": "Fictional Bail Application",
+    "expected_disposition_demo_only": "BAIL GRANTED",
+    "predicted_disposition": "DISPOSED",
+    "confidence": 0.62,
+    "recommended_action": "Review final order and determine follow-up",
+    "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED (62% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+  },
+  {
+    "case_reference": "DIQ-DEMO-MH-003",
+    "case_title": "Fictional Civil Writ Petition",
+    "expected_disposition_demo_only": "DISMISSED",
+    "predicted_disposition": "DISPOSED OFF",
+    "confidence": 0.43365915067024297,
+    "recommended_action": "Manual legal review required",
+    "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED OFF (43% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+  },
+  {
+    "case_reference": "DIQ-DEMO-KA-004",
+    "case_title": "Fictional Consumer Appeal",
+    "expected_disposition_demo_only": "WITHDRAWN",
+    "predicted_disposition": "DISPOSED OFF",
+    "confidence": 0.3404276101050652,
+    "recommended_action": "Manual legal review required",
+    "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED OFF (34% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+  },
+  {
+    "case_reference": "DIQ-DEMO-DL-005",
+    "case_title": "Fictional Civil Revision",
+    "expected_disposition_demo_only": "DISPOSED",
+    "predicted_disposition": "DISPOSED OFF",
+    "confidence": 0.3840912706129414,
+    "recommended_action": "Manual legal review required",
+    "client_facing_update": "DocketIQ predicts the disposition may be DISPOSED OFF (38% model confidence). This is an automated estimate. DocketIQ is not legal advice."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "case_reference": "DIQ-DEMO-AP-001",
+    "case_title": "Fictional Property Appeal",
+    "court_name": "Andhra Pradesh High Court",
+    "case_type": "APPEAL/101/2024",
+    "case_year": 2024,
+    "registration_date": "2024-02-12",
+    "jurisdiction": "Andhra Pradesh",
+    "expected_disposition": "APPEAL(S) ALLOWED",
+    "timeline_events": [
+      {
+        "event_date": "2024-02-12",
+        "event_type": "filing",
+        "title": "Appeal registered",
+        "description": "Fictional demo metadata: appeal registered."
+      },
+      {
+        "event_date": "2024-08-20",
+        "event_type": "hearing",
+        "title": "Preliminary hearing",
+        "description": "Fictional demo metadata: preliminary hearing listed."
+      }
+    ]
+  },
+  {
+    "case_reference": "DIQ-DEMO-BR-002",
+    "case_title": "Fictional Bail Application",
+    "court_name": "Patna High Court",
+    "case_type": "CR. MISC./4828/2025",
+    "case_year": 2025,
+    "registration_date": "2025-01-23",
+    "jurisdiction": "Bihar",
+    "expected_disposition": "BAIL GRANTED",
+    "timeline_events": [
+      {
+        "event_date": "2025-01-23",
+        "event_type": "filing",
+        "title": "Bail application registered",
+        "description": "Fictional demo metadata: application registered."
+      },
+      {
+        "event_date": "2025-03-04",
+        "event_type": "hearing",
+        "title": "Bail hearing listed",
+        "description": "Fictional demo metadata: hearing listed."
+      }
+    ]
+  },
+  {
+    "case_reference": "DIQ-DEMO-MH-003",
+    "case_title": "Fictional Civil Writ Petition",
+    "court_name": "Bombay High Court",
+    "case_type": "WRIT PETITION/77/2023",
+    "case_year": 2023,
+    "registration_date": "2023-06-19",
+    "jurisdiction": "Maharashtra",
+    "expected_disposition": "DISMISSED",
+    "timeline_events": [
+      {
+        "event_date": "2023-06-19",
+        "event_type": "filing",
+        "title": "Writ petition registered",
+        "description": "Fictional demo metadata: petition registered."
+      },
+      {
+        "event_date": "2024-01-15",
+        "event_type": "hearing",
+        "title": "Admission hearing",
+        "description": "Fictional demo metadata: admission hearing listed."
+      }
+    ]
+  },
+  {
+    "case_reference": "DIQ-DEMO-KA-004",
+    "case_title": "Fictional Consumer Appeal",
+    "court_name": "Karnataka High Court",
+    "case_type": "MISCELLANEOUS APPEAL/39/2022",
+    "case_year": 2022,
+    "registration_date": "2022-09-08",
+    "jurisdiction": "Karnataka",
+    "expected_disposition": "WITHDRAWN",
+    "timeline_events": [
+      {
+        "event_date": "2022-09-08",
+        "event_type": "filing",
+        "title": "Consumer appeal registered",
+        "description": "Fictional demo metadata: appeal registered."
+      },
+      {
+        "event_date": "2023-02-16",
+        "event_type": "procedural",
+        "title": "Procedural directions issued",
+        "description": "Fictional demo metadata: directions recorded."
+      }
+    ]
+  },
+  {
+    "case_reference": "DIQ-DEMO-DL-005",
+    "case_title": "Fictional Civil Revision",
+    "court_name": "Delhi High Court",
+    "case_type": "CIVIL REVISION/18/2021",
+    "case_year": 2021,
+    "registration_date": "2021-04-05",
+    "jurisdiction": "Delhi",
+    "expected_disposition": "DISPOSED",
+    "timeline_events": [
+      {
+        "event_date": "2021-04-05",
+        "event_type": "filing",
+        "title": "Civil revision registered",
+        "description": "Fictional demo metadata: revision registered."
+      },
+      {
+        "event_date": "2022-07-11",
+        "event_type": "hearing",
+        "title": "Final hearing listed",
+        "description": "Fictional demo metadata: final hearing listed."
+      }
+    ]
+  }
+]

@@ -15,9 +15,9 @@ def build_recommendation(predicted_disposition: str, confidence: float) -> dict[
         predicted_disposition, "Manual legal review required"
     )
     update = (
-        f"The predicted disposition is {predicted_disposition} "
-        f"({confidence:.0%} model confidence). This is an automated estimate "
-        "and is not legal advice."
+        f"DocketIQ predicts the disposition may be {predicted_disposition} "
+        f"({confidence:.0%} model confidence). This is an automated estimate. "
+        "DocketIQ is not legal advice."
     )
     return {
         "predicted_disposition": predicted_disposition,
