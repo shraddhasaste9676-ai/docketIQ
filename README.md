@@ -1,22 +1,32 @@
-# docketIQ
-DocketIQ is a legal case intelligence platform that turns scattered dockets, filings, orders, and client communications into a clear case timeline and a role-based action plan.
+# React + TypeScript + Vite
 
-It combines automated chronology extraction with practical workflow management: DocketIQ reads case documents and docket activity, identifies key events, deadlines, parties, documents, and obligations, then tells attorneys, paralegals, and clients what happened, what is due next, and who needs to act.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Core capabilities
-Automated case chronology: Extracts dates, filings, hearings, orders, parties, counsel, evidence, and outcomes from dockets, pleadings, emails, and uploaded documents.
+Currently, two official plugins are available:
 
-Unified timeline view: Presents the full matter history in one visual timeline, with filters by event type, party, document, deadline, and case stage.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Next-action engine: Converts case events into prioritized tasks—such as respond to discovery, file an affidavit, collect records, prepare for hearing, or follow up with a client.
+## React Compiler
 
-Deadline and workflow management: Tracks statutory, court, and internal deadlines; assigns owners; sends reminders; and escalates overdue actions.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Client-facing case portal: Gives clients a secure, plain-language view of their case status, upcoming steps, required documents, and recent updates—without exposing internal legal work product.
+## Expanding the Oxlint configuration
 
-Role-based views: Attorneys see strategy, risk, and deadlines; paralegals see tasks and document requests; clients see progress, next steps, and what they must provide.
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-Positioning statement
-DocketIQ turns legal case data into clarity. It automatically builds an accurate case chronology, identifies the next required action, and keeps attorneys, staff, and clients aligned through one secure, role-based workspace.
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
 
-
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#0F2547"/>
+  <!-- Document base -->
+  <path d="M8 7C8 5.89543 8.89543 5 10 5H18L24 11V25C24 26.1046 23.1046 27 22 27H10C8.89543 27 8 26.1046 8 25V7Z" fill="#1E3A8A" stroke="#3B82F6" stroke-width="0.75" stroke-opacity="0.4"/>
+  <!-- Document fold -->
+  <path d="M18 5V11H24" stroke="#93C5FD" stroke-width="0.75" stroke-linejoin="round" fill="#172554"/>
+  <!-- Timeline vertical line -->
+  <line x1="12.5" y1="12" x2="12.5" y2="23" stroke="#60A5FA" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Traceable Nodes -->
+  <circle cx="12.5" cy="14" r="1.75" fill="#38BDF8"/>
+  <circle cx="12.5" cy="21" r="1.75" fill="#0D9488"/>
+  <!-- Verification accent dot -->
+  <path d="M16 14H20.5M16 21H19.5" stroke="#E2E8F0" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
